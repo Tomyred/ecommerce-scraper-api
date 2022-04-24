@@ -17,7 +17,7 @@ export const defaultResponse = (req, res, data, length, error = null) => {
         res.json({
             error: false,
             data,
-            length,
+            length: length ? length : "",
             message: "",
         });
     }
